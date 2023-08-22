@@ -1,0 +1,21 @@
+{
+  "name": "facebook_auto_posts",
+  "version": "1.0.0",
+  "description": "Facebook auto-posts builder",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib",
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "flutter build macos",
+    "generate": "appdmg ./installers/macos/config.json ./installers/macos/facebook_auto_posts.dmg",
+    "compile": "yarn build && yarn generate"
+  },
+  "author": "Dante Cervantes",
+  "license": "ISC",
+  "dependencies": {
+    "appdmg": "^0.6.6"
+  }
+}
